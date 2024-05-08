@@ -10,12 +10,16 @@
 		<!-- <link rel="stylesheet" href="css_folder/file_4.css" />
 		<link rel="stylesheet" href="css_folder/file_5.css" /> -->
 		<link rel="stylesheet" href="css_folder/file_6.css" />
-		<link rel="stylesheet" href="css_folder/my_defined_css.css">
+		<link rel="stylesheet" href="css_folder/my_defined_css.css">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="./js_folder/js_file_1.js"></script>
+
 	</head>
 
-	<body id="ctl00_ctl00_Body">
-
-	<form method="post" action="./" id="aspnetForm" data-toggle="validator" role="form">
+	<body id="ctl00_ctl00_Body" onload="edit_info()">
+	<form>
+	<!-- <form method="post" action="./" id="aspnetForm" data-toggle="validator" role="form"> -->
 		<table class="dxpnlControl_Mulberry contentPanel" id="ctl00_ctl00_contentPane">
 			<tr>
 				<td style="vertical-align:Top;">
@@ -109,8 +113,10 @@
 							<div class="MainContent">
 								
 			<div class="row">
-				<span class="title_1" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbt1">TH&#212;NG TIN SINH VI&#202;N</span>
-				<button class="button_style"></button>
+				<span class="title_1" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbt1">THÔNG TIN SINH VIÊN</span>
+				<a href="edit_info.html" target="_blank">
+					<i style="font-size:24px" class="fa">&#xf044;</i>
+				</a>
 				<hr/>
 			</div>
 			<div class="row">
@@ -129,37 +135,36 @@
 					</div>
 					<br>
 				<div class="center">
-					<span class="dxeBase_Mulberry normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbMSSV"><span class="att_info">MSSV:</span> <span class="info">20210466</span></span>
+					<span class="dxeBase_Mulberry normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbMSSV"><span class="att_info">MSSV:</span> <span class="info" id="mssv">20210466</span></span>
 				</div>
-
 
 				</div>
 				<div class="">
 					<div class="col-md-4">
 						<span class="dxeBase_Mulberry normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo1">
-							<span class="att_info">Họ và tên&emsp;: </span> <span class="info">Hoàng Văn Khang</span> 
+							<span class="att_info">Họ và tên&emsp;: </span> <span class="info" id="hovaten">Hoàng Văn Khang</span> 
 							<br/>
-							<span class="att_info">Năm vào trường&emsp;: </span> <span class="info">2021</span>
+							<span class="att_info">Năm vào trường&emsp;: </span> <span class="info" id="namvaotruong">2021</span>
 							<br/>
-							<span class="att_info">Bậc đào tạo&emsp;: </span> <span class="info">KSCLC-TN-TT-VN-ICT</span>
+							<span class="att_info">Bậc đào tạo&emsp;: </span> <span class="info" id="bacdaotao">KSCLC-TN-TT-VN-ICT</span>
 							<br/>
-							<span class="att_info">Chương trình&emsp;: </span> <span class="info">Công nghệ thông tin Global ICT 2021</span>
+							<span class="att_info">Chương trình&emsp;: </span> <span class="info" id="chuongtrinh">Công nghệ thông tin Global ICT 2021</span>
 							<br/>
-							<span class="att_info">Khoa/Viện quản lý&emsp;: </span> <span class="info">Trường Công nghệ thông tin và Truyền thông</span>
+							<span class="att_info">Khoa/Viện quản lý&emsp;: </span> <span class="info" id="khoavienquanli">Trường Công nghệ thông tin và Truyền thông</span>
 							<br/>
-							<span class="att_info">Tình trạng học tập&emsp;: </span> <span class="info">Học</span>
+							<span class="att_info">Tình trạng học tập&emsp;: </span> <span class="info" id="tinhtranghoctap">Học</span>
 							<br/>
 						</span>
 					</div>
 					<div class="col-md-4">
 						<span class="dxeBase_Mulberry normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo2">
-							<span class="att_info">Giới tính&emsp;: </span> <span class="info">Nam</span>
+							<span class="att_info">Giới tính&emsp;: </span> <span class="info" id="gioitinh">Nam</span>
 							<br/>
-							<span class="att_info">Lớp&emsp;: </span> <span class="info">ICT 02-K66</span>
+							<span class="att_info">Lớp&emsp;: </span> <span class="info" id="lop">ICT 02-K66</span>
 							<br/>
-							<span class="att_info">Khóa học&emsp;: </span> <span class="info">66</span>
+							<span class="att_info">Khóa học&emsp;: </span> <span class="info" id="khoahoc">66</span>
 							<br/>
-							<span class="att_info">Email&emsp;: </span> <span class="info">khang.hv210466@sis.hust.edu.vn</span>
+							<span class="att_info">Email&emsp;: </span> <span class="info" id="email">khang.hv210466@sis.hust.edu.vn</span>
 							<br/>
 						</span>
 					</div>
